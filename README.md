@@ -1,6 +1,7 @@
 ## Project "The Wall"
 
-##### Build out your database and make sure to connect it by entering the information on the `server.py` file
+##### Build out your database and make sure to connect it by entering the information on the `server.py` file.
+##### Use `walldb.mwb` for table and column names in your database.
 ##### Check `mysqlconnection.py` to make sure everything is correct.  
 
 1. To run, open your terminal and go to the folder the `server.py` file is in.
