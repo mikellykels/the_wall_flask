@@ -1,0 +1,79 @@
+*{
+    margin: 0px auto;
+    font-family: Arial, sans-serif;
+}
+
+#container{
+    width: 1050px;
+}
+
+.error{
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+
+.success{
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+}
+
+#register form, #login form{
+    font-size: 12px;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#message textarea{
+    width: 900px;
+    height: 100px;
+    resize: none;
+}
+
+    #message input[type=submit]{
+        background-color: blue;
+        color: white;
+        border: 1px solid black;
+        display: block;
+        margin-top: 10px;
+        margin-right: 150px;
+    }
+
+#out_messages textarea{
+    width: 800px;
+    height: 100px;
+    resize: none;
+}
+
+    #out_messages input[type=submit]{
+        background-color: #B50B99;
+        color: white;
+        border: 1px solid black;
+        display: block;
+        margin-top: 10px;
+        margin-right: 250px;
+    }
+
+.user_out{
+    color: purple;
+}
+
+.comment_user_out{
+    color: #950B0B;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+    .comment_out{
+        margin-left: 50px;
+    }

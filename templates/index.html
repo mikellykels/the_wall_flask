@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Login and Registration</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div id="container">
+        <h1>The Wall</h1>
+        <div id="register">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                        {% for category, message in messages %}
+                            <p class="{{ category }}">{{ message }}</p>
+                        {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <h1>Register</h1>
+            <form action="/register" method="POST">
+                <input type="hidden" name="action" value="register">
+                First Name:<input type="text" name="first_name" placeholder="First Name">
+                Last Name:<input type="text" name="last_name" placeholder="Last Name">
+                Email:<input type="text" name="email" placeholder="Email">
+                Password:<input type="password" name="password" placeholder="Password">
+                Confirm Password:<input type="password" name="confirm_password" placeholder="Confirm Password">
+                <input type="submit" value="Register">
+            </form>
+        </div><!--end register-->
+        <hr>
+        <div id="login">
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                <input type="hidden" name="action" value="login">
+                Email:<input type="text" name="email" placeholder="Email">
+                Password:<input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+        </div><!--end login-->
+
+    </div><!--end container-->
+</body>
+</html>
